@@ -3,71 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIH</title>
+    <title>GANGAWATCH</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="app.js"></script>
   </head>
   <body>
     <div class="navbar">
-      <h1 id="heading">GANGAWATCH</h1><br>
-      <div class="navlinks">
-      <a>Home</a>&nbsp;
-      <a href="#Data">Data</a>&nbsp;
-      <a href="#Predict">Predict</a>&nbsp;
+      <div class="scroll">
+        <a href="#">Home</a>&nbsp;
+        <a href="#Data">Data</a>&nbsp;
+        <a href="#Predict">Predict</a>
+      </div>
+      <div class="login">
+        <a href="#">Login</a>&nbsp;
+        <a href="#">Register</a>
       </div>
     </div>
-    <br><br><br>
+    <div class="header">
+      <h1 id="heading">GANGAWATCH</h1>
+    </div>
   <div id="Data">
     <div id="table">
       <table class="styled">
       <tr>
-        <th id="mainhead">POLLUTANTS</th>
-        <th>Data</th>
+        <th>PARAMETERS</th>
+        <th>Value</th>
       </tr>
       <tr>
         <th>Dissolved Oxygen (mg/l)</th>
-        <td>500</td>
+        <td id="DO"></td>
       </tr>
       <tr>
         <th>Nitrate (mg/l)</th>
-        <td>200</td>
+        <td id="Nitrate"></td>
       </tr>
       <tr>
         <th>Sulphate (mg/l)</th>
+        <td id="Sulphate"></td>
       </tr>
       <tr>
         <th>pH</th>
+        <td id="pH"></td>
       </tr>
       <tr>
         <th>Phosphate (mg/l)</th>
+        <td id="Phosphate"></td>
       </tr>
       <tr>
         <th>Biochemical Oxygen Demand (mg/l)</th>
+        <td id="BOD"></td>
       </tr>
       <tr>
         <th>Fecal Chloroform (MPN/100ml)</th>
+        <td id="FC"></td>
       </tr>
       <tr>
         <th>Hardness (mg/l)</th>
+        <td id="Hardness"></td>
       </tr>
       <tr>
         <th>Precipitation (%)</th>
+        <td id="Precipitation"></td>
       </tr>
       <tr>
         <th>Temperature (°C)</th>
+        <td id="Temp"></td>
       </tr>
       </table>
     </div>
     <div id="map"></div>
     </div>
-  </div>
+    <div class="footer"></div>
   <script src="main.js"></script>
   </body>
 </html>

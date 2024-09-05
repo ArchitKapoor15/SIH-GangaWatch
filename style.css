@@ -2,81 +2,61 @@ html{
     scroll-behavior: smooth;
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
+body{
+    margin: 0;
+}
+
+.navbar{
+    background-color: rgba(211, 211, 211, 0.5);
+    height: 45px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll .login{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.scroll a, .login a{
+    color: grey;
+    text-decoration: underline;
     font-size: 18px;
-    font-weight: bold;
-    padding: 8px 16px;
-    border: 2px solid #3498db;
-    border-radius: 4px;
     transition: all 0.3s ease;
+    font-size: medium;
+    font-family: helvetica;
+    display: inline;
+    padding: 9px;
 }
 
 a:hover {
-    background-color: #3498db;
-    color: white;
+    background-color: white;
+    color: blue;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.05);
 }
 
-.navbar{
+.header{
+    background-image: url("header.jpg");
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    height: 50vh;
+    height: 59vh;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: rgb(243, 240, 109);
-    margin: 0;
 }
 
 #heading{
-    flex-basis: 100%;
-    font-family: "Fascinate Inline", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    /* flex-basis: 100%; */
+    font-weight: 500;
     font-size : 85px;
     margin: 0;
-}
-
-.styled {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 18px;
-    text-align: left;
-    height: 100%;
-}
-
-.styled th,
-.styled td {
-    padding: 12px 40px;
-    border: 1px solid #dddddd;
-}
-
-.styled td{
-    text-align: center;
-}
-
-.styled th {
-    background-color: #009879;
-    color: #ffffff;
-}
-
-.styled td {
-    background-color: #f3f3f3;
-}
-
-.styled tr:nth-of-type(even) {
-    background-color: #f9f9f9;
-}
-
-.styled tr:hover {
-    background-color: #f1f1f1;
-}
-
-#mainhead{
-    text-align: center;
+    color: white;
+    font-family:'Franklin Gothic Medium';
+    padding-top: 80px;
 }
 
 #Data{
@@ -86,10 +66,53 @@ a:hover {
 #table{
     flex:1;
     width: 50%;
-    height: 500px;
+    /* height: 500px; */
+    /* display: none; */
 }
 
-#map{
-    width: 70%;
-    height: 500px;
+.styled {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    height: 100%;
+    font-family: 'Franklin Gothic Medium';
 }
+
+.styled th{
+    /* background-color: #009879; */
+    /* background-color: #ADD19E; */
+    /* background-color: #277FCA; */
+    padding: 12px 40px;
+    border: 1px solid #dddddd;
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.styled td{
+    background-color: #f3f3f3;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+/* .styled tr:nth-of-type(even) {
+    background-color: #AAD3DF;
+}
+
+.styled tr:hover {
+    background-color: #f1f1f1;
+} */
+
+#map{
+    width: 65%;
+}
+
+.leaflet-popup-close-button {
+    display: none;
+}
+
+.footer{
+    background-color: rgba(211, 211, 211, 0.5);
+    height: 45px;
+}
+
