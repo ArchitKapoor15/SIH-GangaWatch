@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIH</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 id="heading">GANGAWATCH</h1><br>
+      <div class="navlinks">
+      <a>Home</a>&nbsp;
+      <a href="#Data">Data</a>&nbsp;
+      <a href="#Predict">Predict</a>&nbsp;
+      </div>
+    </div>
+    <br><br><br>
+  <div id="Data">
+    <div id="table">
+      <table class="styled">
+      <tr>
+        <th id="mainhead">POLLUTANTS</th>
+        <th>Data</th>
+      </tr>
+      <tr>
+        <th>Dissolved Oxygen (mg/l)</th>
+        <td>500</td>
+      </tr>
+      <tr>
+        <th>Nitrate (mg/l)</th>
+        <td>200</td>
+      </tr>
+      <tr>
+        <th>Sulphate (mg/l)</th>
+      </tr>
+      <tr>
+        <th>pH</th>
+      </tr>
+      <tr>
+        <th>Phosphate (mg/l)</th>
+      </tr>
+      <tr>
+        <th>Biochemical Oxygen Demand (mg/l)</th>
+      </tr>
+      <tr>
+        <th>Fecal Chloroform (MPN/100ml)</th>
+      </tr>
+      <tr>
+        <th>Hardness (mg/l)</th>
+      </tr>
+      <tr>
+        <th>Precipitation (%)</th>
+      </tr>
+      <tr>
+        <th>Temperature (°C)</th>
+      </tr>
+      </table>
+    </div>
+    <div id="map"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  </body>
+</html>

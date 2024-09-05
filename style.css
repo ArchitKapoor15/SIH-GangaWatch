@@ -1,0 +1,95 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #3498db;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 240, 109);
+    margin: 0;
+}
+
+#heading{
+    flex-basis: 100%;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size : 85px;
+    margin: 0;
+}
+
+.styled {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    height: 100%;
+}
+
+.styled th,
+.styled td {
+    padding: 12px 40px;
+    border: 1px solid #dddddd;
+}
+
+.styled td{
+    text-align: center;
+}
+
+.styled th {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+.styled td {
+    background-color: #f3f3f3;
+}
+
+.styled tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+.styled tr:hover {
+    background-color: #f1f1f1;
+}
+
+#mainhead{
+    text-align: center;
+}
+
+#Data{
+    display: flex;
+}
+
+#table{
+    flex:1;
+    width: 50%;
+    height: 500px;
+}
+
+#map{
+    width: 70%;
+    height: 500px;
+}
