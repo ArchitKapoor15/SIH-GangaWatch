@@ -71,8 +71,13 @@ a:hover {
 
 #table{
     flex:1;
-    width: 50%;
+    /* width: 50%; */
     /* height: 500px; */
+}
+
+#map{
+    width: 65%;
+    /* display: block; */
     /* display: none; */
 }
 
@@ -83,13 +88,14 @@ a:hover {
     text-align: left;
     height: 100%;
     font-family: 'Franklin Gothic Medium';
+    /* display: none; */
 }
 
 .styled th{
     /* background-color: #009879; */
     /* background-color: #ADD19E; */
     /* background-color: #277FCA; */
-    padding: 12px 40px;
+    padding: 26px 40px;
     border: 1px solid #dddddd;
     background-color: #3498db;
     color: #ffffff;
@@ -120,9 +126,10 @@ a:hover {
 }
 
 .styled2 th{
-    padding: 12px 40px;
+    padding: 20px 40px;
     border: 1px solid #dddddd;
-    background-color: #3498db;
+    /* background-color: #3498db; */
+    background-color: #f1b04c;
     color: #ffffff;
 }
 
@@ -133,12 +140,22 @@ a:hover {
     font-family: Helvetica;
 }
 
-#map{
-    width: 65%;
-}
-
 .leaflet-popup-close-button {
     display: none;
+}
+
+.leaflet-popup-content:has(> .marker1-content) {
+    color: red;
+}.leaflet-popup-content:has(> .marker2-content) {
+    color: red;
+}.leaflet-popup-content:has(> .marker3-content) {
+    color: #f1b04c;
+}.leaflet-popup-content:has(> .marker4-content) {
+    color: green;
+}.leaflet-popup-content:has(> .marker5-content) {
+    color: green;
+}.leaflet-popup-content:has(> .marker6-content) {
+    color: green;
 }
 
 .footer{
